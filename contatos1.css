@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    width: 60%;
+    background-color: #000;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+}
+
+input[type=text], input[type=tel], textarea {
+    background-color: black;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: block;
+    border: 2px solid #D21617;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+input::placeholder, textarea::placeholder {
+    color: red;
+}
+
+input[type="text"], input[type=tel], textarea:focus {
+    outline: none;
+}
+
+.button {
+    background-color: #D21617;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    border: none;
+    width: 30%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.button:hover {
+    background-color: #1F2024;
+}
+
+h1 {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+    background-image: url(https://www.baltana.com/files/wallpapers-36/The-Batman-2022-Movie-DC-Wallpaper-126656.jpg);
+    background-size: cover;
+}
+
+textarea {
+    resize: none;
+}
+
+footer {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+}
+
+span {
+    color: #FFF;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width:768px) {
+  .footer-navigation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    }
+
+    nav {
+    display: none;
+    }
+
+    input[type=text], input[type=tel], textarea {
+  width: 100%;
+    }
+    
+    .button {
+      width: 100%;
+    }
+  
+    .container {
+    background-position: center center;
+  }
+  }
+
+  
